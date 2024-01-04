@@ -231,7 +231,7 @@ h1{
       }
    
     #whoweare{
-        background-image: url('images/intro_bg.png');
+        background-image: url('images/intro_bg.jpeg');
         background-size: cover;
         background-position: 0 80%;
         height: 100vh;
@@ -442,7 +442,7 @@ h1{
         margin-top: 4vh;
       }
   #whoweare{
-        background-image: url('images/intro_bg.png');
+        background-image: url('images/intro_bg.jpeg');
         background-size: cover;
         background-position: 0 80%;
         height: 100vh;
