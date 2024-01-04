@@ -11,6 +11,16 @@ body {
     justify-content: center;
     letter-spacing: .03rem;
 }
+.lato{
+    font-family: 'Lato',sans-serif;
+}
+.subhead{
+    font-family: 'Lato',sans-serif;
+
+}
+.lusi{
+    font-family: 'Lusitana', serif;
+}
 h1{
     font-weight: 200;
     font-family: 'Lato', sans-serif;
@@ -29,15 +39,55 @@ h1{
     color: rgb(0, 0, 0) /* Set link color */
 }
 
-.bg-image{
+
+  .whitebox {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center; /* Center items horizontally */
+    padding: 5vh;
+    background-color: white;
+    height: 30vh;
+  }
+  .button_red{
+    margin-top: 3vh;
+  
+  
+    background: #4B151B;
+    backface-visibility: hidden;
+    border-radius: .375rem;
+    border-style: solid;
+    border-width: .1rem;
+    box-sizing: border-box;
+    border-color: #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+    padding: .875rem 1.125rem;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    transition: transform .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  .button_red:hover{
+    transform: scale(1.05);
+  }
+
+@media(min-width:1300) { 
+
+    .bg-image{
     background-image: url('images/banner2.jpeg');
     background-size: cover;
     background-position: center;
     width: 100%;
     background-attachment: fixed;
   }
-
-@media(min-width:1300) { 
     #culture-and-values {
       display: grid;
       padding: 5vw;
@@ -50,11 +100,12 @@ h1{
     }
 /* medium/large*/
 @media(min-width: 768px){
+    
   #whomst{
     padding-top: 0;
-    height: 900px;
+    height: 81vh;
     display: grid;
-      padding-left: 15vw;
+      padding-left: 10vw;
       padding-right: 15vw;
       grid-template-columns: repeat(8, 1fr); /* Adjusted to an 8-column grid */
       grid-template-rows: repeat(8, 1fr); /* Adjusted to an 8-row grid */
@@ -233,31 +284,103 @@ h1{
   .block_tl{
         font-size: 16px;
         color: rgb(74, 74, 74);
-        grid-column-start: 3;
-        grid-column-end:span 5;
+        grid-column-start: 2;
+        grid-column-end:span 7;
         grid-row-start: 2;
       
       }
   .block_tr{
         font-size: 16px;
         color: rgb(74, 74, 74);
-        grid-column-start: 3;
-        grid-column-end:span 5;
+        grid-column-start: 2;
+        grid-column-end:span 7;
         grid-row-start: 3;
   }
   .pagehead{
-        border-bottom: 1px solid rgb(0, 0, 0);
+    padding-bottom: 3vh;
+    border-bottom: 1px solid rgb(188, 188, 188);
         color: rgb(0, 0, 0);
         font-size: 42px;
         margin-top: 5vh;
         grid-column-start: 1;
-        grid-column-end:5 ;
+        grid-column-end:span 8;
         grid-row-start: 1;
         grid-row-end: span 1;
         font-family: 'Lato',sans-serif;
         font-weight: 200;
       }
+
+      .pageheadC{
+        border-bottom: 1px solid rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        font-size: 42px;
+        margin-top: 5vh;
+        grid-column-start: 1;
+        grid-column-end:7 ;
+        grid-row-start: 1;
+        grid-row-end: span 1;
+        font-family: 'Lato',sans-serif;
+        font-weight: 200;
+      }
+      #ContactUs{
+        padding-top: 3vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-bottom: 3vh;
+        grid-row: 1;
+        text-align: center;
       
+      }
+      #values{
+        padding-top: 15vh;
+        height: 100vh;
+        display: grid;
+          padding: 5vw;
+          grid-template-columns: repeat(10, 1fr); /* Adjusted to an 8-column grid */
+          grid-template-rows: repeat(10, 1fr); /* Adjusted to an 8-row grid */
+          gap: 20px;
+          color: rgb(255, 255, 255);
+      
+      }
+      .excellence{
+        font-size: 16px;
+        
+        grid-column-start: 1;
+        grid-column-end:span 4;
+        grid-row-start: 2;
+      }
+      .innovation{
+        font-size: 16px;
+        
+        grid-column-start: 7;
+        grid-column-end:span 4;
+        grid-row-start: 2;
+      }
+      
+      .independence{
+        font-size: 16px;
+       
+        grid-column-start: 7;
+        grid-column-end:span 4;
+        grid-row-start: 3;
+        grid-row-end: span 5;
+      }
+      .collaboration{
+        font-size: 16px;
+        
+        grid-column-start: 1;
+        grid-column-end: span 4;
+        grid-row-start: 3;
+        
+        grid-row-end: span 4;
+      }
+
+.liberty{
+    background-image: url('images/liberty.jpg');
+    background-size: cover; 
+    background-position: bottom;
+    
+  }
       
 }
 
@@ -265,6 +388,13 @@ h1{
 
 @media screen and (max-width: 768px){
 
+    .bg-image{
+        background-image: url('images/banner2.jpeg');
+        background-size: cover;
+        background-position: center;
+        max-width: 100%;
+        background-attachment: fixed;
+      }
     .nav-item{
         border: 1 px solid blacl;
    margin-top:  0 !important;
@@ -394,9 +524,65 @@ h1{
         grid-column-end:span 5;
         grid-row-start: 3;
   }
-
-
+  #ContactUs{
+    padding-top: 3vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 3vh;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+  
+  }
+  #whomst{
+    padding-top: 0 !important;
+   
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+      color: rgb(0, 0, 0);
+      align-items: center;
+  }
+  .pagehead{
+    padding-bottom: 3vh;
+    border-bottom: 1px solid rgb(188, 188, 188);
+    color: rgb(0, 0, 0);
+    font-size: 42px;
+    margin-top: 5vh;
+    font-family: 'Lato',sans-serif;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 3vh;
+    width: 70vw;
+    justify-content: center;
+  }
+  .liberty{
+    background-image: url('images/liberty_skinny.jpeg');
+    background-size:cover; 
+    background-position: top;
+    height: 100%;
+    
+  }
+  #values{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      padding: 5vw;
+      color: rgb(255, 255, 255);
+  
+  }
 }
+
+.pageheadC{
+    border-bottom: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-size: 42px;
+    margin-top: 5vh;
+    font-family: 'Lato',sans-serif;
+    font-weight: 200;
+    margin-bottom: 3vh;
+  }
+
 
 @keyframes drawLine {
     from {
