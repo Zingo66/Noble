@@ -653,7 +653,7 @@ h1{
     margin-top: 6vh;
     height: 15vh; /* 10% of the viewport height */
     width: 100vw; /* 100% of the viewport width */
-    background-image: url('images/stockex.png');
+    background-image: url('images/stockex.jpeg');
     background-size: cover; /* Adjusts the background image to cover the element */
     background-position: center; /
   }
