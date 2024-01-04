@@ -391,7 +391,7 @@ h1{
     .bg-image{
         background-image: url('images/banner2.jpeg');
         background-position: calc(50% - 2vw) center; 
-        max-height: 100vh  !important;
+        max-height: 110vh  !important;
         background-attachment: fixed;
         max-width: 100% !important;
        
