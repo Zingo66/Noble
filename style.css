@@ -390,10 +390,11 @@ h1{
 
     .bg-image{
         background-image: url('images/banner2.jpeg');
-        background-position: center;
+        background-position: calc(50% - 2vw) center; 
         max-height: 100vh  !important;
         background-attachment: fixed;
         max-width: 100% !important;
+       
       }
     .nav-item{
         border: 1 px solid blacl;
@@ -401,7 +402,7 @@ h1{
    margin-bottom: 0!important;
   }
     .landing-container{
-        height: 70vh; 
+        height: 90vh; 
         padding: 8vw;
         display: flex;
         flex-direction: column;
