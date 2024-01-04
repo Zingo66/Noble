@@ -390,10 +390,10 @@ h1{
 
     .bg-image{
         background-image: url('images/banner2.jpeg');
-        background-size: cover;
         background-position: center;
-        max-width: 100%  !important;;
+        max-height: 100vh  !important;
         background-attachment: fixed;
+        max-width: 100% !important;
       }
     .nav-item{
         border: 1 px solid blacl;
