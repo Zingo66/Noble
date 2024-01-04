@@ -83,7 +83,6 @@ h1{
 
     .bg-image{
     background-image: url('images/banner2.jpeg');
-    background-size: cover;
     background-position: center;
     width: 100%;
     background-attachment: fixed;
@@ -390,10 +389,9 @@ h1{
 
     .bg-image{
         background-image: url('images/banner2.jpeg');
-        background-size: cover;
+    
         background-position: center;
-        max-width: 100%;
-        background-attachment: fixed;
+        width:768px;
       }
     .nav-item{
         border: 1 px solid blacl;
@@ -668,7 +666,7 @@ h1{
 
 
 .map{
-  width: 100%;
+  width: 100vw;
   height: 40vh;
 }
 
